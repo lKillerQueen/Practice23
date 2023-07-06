@@ -55,11 +55,11 @@ int main()
 
     while (file >> el) {
 
-        arr = (int*)(int*)realloc(arr, (length + 1) * sizeof(int));
+        arr = (int*)(int*)realloc(arr, (length + 1) * sizeof(int));  // Заполнение массива из файла
         arr[length] = el;
-        length += 1;
-
-    }
+        length += 1;                                        
+                                                                            
+    }                                                                        
 
     file.close();
 
@@ -76,8 +76,8 @@ int main()
 
     for (int i = 0; i < length; i++)
     {
-        fout << arr[i] << " ";
-    }
+        fout << arr[i] << " ";                                  // Вывод массива в файл
+    }   
 
     fout.close();
 
